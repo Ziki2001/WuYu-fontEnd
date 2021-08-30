@@ -134,7 +134,7 @@ export default {
 
 <style scoped>
 .reg-container {
-  height:100vh;
+  height:900px;
   padding-bottom: 50px;
 }
 .zk-reg {

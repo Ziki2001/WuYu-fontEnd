@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div >
       <div class='container' v-loading.fullscreen.lock="fullscreenLoading">
           <div v-for="value in tableData" :key="value.content" class="card">
             <el-image :src="`/api/educationItem/image/2021/?type=${value.type}&content=${value.content}&date=${value.date}.jpeg`" class="card-img">
@@ -51,24 +51,25 @@ export default {
 </script>
 <style scoped>
 .container {
-  width: 1620px;
+  width: 100%;
   padding-top: 100px;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
 .card {
-  width: 500px;
+  width: 30%;
   height: 370px;
   background-color: white;
   border-radius: 10px;
   box-shadow:2px 2px 10px #909090;
-  margin: 0 20px 40px 20px;
+  /* margin: 0 20px 40px 20px; */
+  margin-left: 3%;
+  margin-bottom: 40px;
 }
 .card-img {
   margin-top: 10px;
-  width: 470px;
+  width: 90%;
   height: 250px;
   margin-bottom: 10px;
   border-radius: 5px;
